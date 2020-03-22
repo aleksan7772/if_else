@@ -1,31 +1,24 @@
 public class Faktorial {
     // Evaluate n!
 
-    public static long factorial( int n )
+    public static long factorial(int n) {
 
-    {
-
-        if( n <= 1 )     // base case
+        if (n <= 1)
 
             return 1;
 
         else
 
-            return n * factorial( n - 1 );
+            return n * factorial(n - 1);
 
     }
 
+    public static void main(String[] args) {
 
 
-    // Simple test program
+        for (int i = 1; i <= 10; i++)
 
-    public static void main( String [ ] args )
-
-    {
-
-        for( int i = 1; i <= 10; i++ )
-
-            System.out.println( factorial( i ) );
-
+            System.out.println(factorial(i));
     }
+
 }
